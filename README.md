@@ -1,11 +1,11 @@
 * Teammates, responsibilities, and accomplishments
-  1. Jay Giron - Hosting Back End
+  - Jay Giron - Hosting Back End
     -
     -
-  2. Jared Edwards - Rails and API
+  - Jared Edwards - Rails and API
     -
     -
-  3. Isaac Duarte - AngularJS Front End
+  - Isaac Duarte - AngularJS Front End
     -
     -
 
