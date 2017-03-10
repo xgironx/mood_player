@@ -1,7 +1,10 @@
 * Teammates and responsibilities
   - Jay Giron - Hosting
   - Jared Edwards - Rails Back End and API
-  - Isaac Duarte - AngularJS Front End 
+  - Isaac Duarte - AngularJS Front End
+
+* Timeline and Goals
+  - Deployed MVP by lunch on Tuesday
 
 
 * User Stories
