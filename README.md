@@ -1,7 +1,18 @@
-* Teammates and responsibilities
-  - Jay Giron - Hosting
-  - Jared Edwards - Rails Back End and API
-  - Isaac Duarte - AngularJS Front End
+* Teammates, responsibilities, and accomplishments
+  1. Jay Giron - Hosting Back End
+    -
+    -
+  2. Jared Edwards - Rails and API
+    -
+    -
+  3. Isaac Duarte - AngularJS Front End
+    -
+    -
+
+* Trello Board for the project - https://trello.com/b/v1D0AOkJ/project-3
+  - blue - Isaac Duarte
+  - red - Jay Giron
+  - yellow - Jared Edwards
 
 * Timeline and Goals
   - Deployed MVP by lunch on Tuesday
