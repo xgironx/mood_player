@@ -10,11 +10,14 @@
     "$stateProvider",
     RouterFunction
   ])
+  .config(function($urlRouterProvider){
+    $urlRouterProvider.when("", "/moods/welcome")
+  })
 
   function RouterFunction($stateProvider) {
     $stateProvider
     .state("MoodsWelcome", {
-      url: "",
+      url: "/moods/welcome",
       templateUrl: "js/moods/welcome.html",
       controller: "MoodsWelcomeController",
       controllerAs: "MoodsWelcomeVM"
