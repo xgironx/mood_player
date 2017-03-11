@@ -9,9 +9,6 @@
     ]);
 
   function MoodsIndexControllerFunction(moodsFactory){
-    this.data = moodsFactory.query()
-    this.hello = function () {
-      console.log(this.data)
-    }
+    this.moods = moodsFactory.query()
   }
 }());

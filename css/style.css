@@ -65,6 +65,10 @@ section {
   flex-basis: 10px;
   background-color: #7C25F8;
   font-family: inherit;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 aside {
   width: 10px;
