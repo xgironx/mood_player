@@ -22,6 +22,7 @@ $(document).ready(() => {
     console.log(" GET Worked");
     let artist = $(".artist").val();
     let track = $(".track").val();
+
     let url =  "https://api.spotify.com/v1/search?q="+track+"&type=track&artist="+artist;
 
 
@@ -30,7 +31,12 @@ $(document).ready(() => {
       dataType: 'json',
       url: url
     }).done((response) => {
-      console.log(response);
+      // console.log(response);
+
+
+      //need to validate
+      console.log(response.tracks.items[0].uri);
+
       $("#here").append(response);
     }).fail((response)=> {
       console.log("ajax get failed");
