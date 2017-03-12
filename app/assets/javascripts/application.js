@@ -14,3 +14,29 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
+// https://api.spotify.com/v1/search?q=middle&type=track&artist=DJ%20Snake
+
+$(document).ready(() => {
+
+  $(".get").on("click", () => {
+    console.log(" GET Worked");
+    let artist = $(".artist").val();
+    let track = $(".track").val();
+    let url =  "https://api.spotify.com/v1/search?q="+track+"&type=track&artist="+artist;
+
+
+    $.ajax({
+      type: 'GET',
+      dataType: 'json',
+      url: url
+    }).done((response) => {
+      console.log(response);
+      $("#here").append(response);
+    }).fail((response)=> {
+      console.log("ajax get failed");
+    });
+
+  }); //end of get
+
+
+});//end document ready
