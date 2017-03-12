@@ -1,13 +1,10 @@
 Rails.application.routes.draw do
-  get 'song/index'
 
-  get 'song/show'
+  root :to => 'moods#index'
 
-  get 'song/delete'
-
-  get 'mood/index'
-
-  get 'mood/show'
+  resources :moods, :only =>[:index, :show] do
+    resources :songs, :only =>[:index, :show]
+  end
 
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end

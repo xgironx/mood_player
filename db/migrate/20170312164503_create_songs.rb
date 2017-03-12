@@ -8,6 +8,7 @@ class CreateSongs < ActiveRecord::Migration[5.0]
       t.string :uri
       t.string :song_length
       t.string :votes
+      t.references :mood
 
       t.timestamps
     end
