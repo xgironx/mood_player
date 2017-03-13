@@ -2,8 +2,8 @@
 
 (function(){
   angular
-  .module("mood_player")
-  .controller("Nav", [
+  .module("nav")
+  .controller("nav", [
     "$state",
     NavFunction
   ])
@@ -15,5 +15,4 @@
     }
     this.update();
   }
-
 }());

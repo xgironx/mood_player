@@ -4,15 +4,22 @@
   angular
   .module("mood_player", [
     "ui.router",
-    "moods"
+    "moods",
+    "nav"
+  ])
+  .config([
+    "$urlRouterProvider",
+    ReRouterFunction
   ])
   .config([
     "$stateProvider",
     RouterFunction
   ])
-  .config(function($urlRouterProvider){
-    $urlRouterProvider.when("", "/moods/welcome")
-  })
+
+  function ReRouterFunction($urlRouterProvider) {
+    $urlRouterProvider
+    .when("", "/moods/welcome")
+  }
 
   function RouterFunction($stateProvider) {
     $stateProvider

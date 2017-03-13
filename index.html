@@ -9,7 +9,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.0-beta.2/angular-resource.min.js"></script>
     <script src="js/app.js"></script>
-    <script src="js/nav.js"></script>
+    <script src="js/nav/nav.js"></script>
+    <script src="js/nav/nav.controller.js"></script>
     <script src="js/moods/moods.js"></script>
     <script src="js/moods/moods.factory.js"></script>
     <script src="js/moods/welcome.controller.js"></script>
@@ -23,7 +24,7 @@
       <div class="title">
         <h1>mood_player</h1>
       </div>
-      <nav ng-controller="Nav as vm">
+      <nav ng-controller="nav as vm">
       <a class="navlink" ng-hide="vm.state.current.url=='/moods/welcome'" data-ui-sref="MoodsWelcome"><span>Welcome</span></a>
       <a class="navlink" ng-hide="vm.state.current.url=='/moods/index'" data-ui-sref="MoodsIndex"><span>Index</span></a>
       <a class="navlink" ng-hide="vm.state.current.url=='/moods/new'" data-ui-sref="MoodsNew"><span>New</span></a>
