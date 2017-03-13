@@ -20,10 +20,11 @@ $(document).ready(() => {
 
   $(".get").on("click", () => {
     console.log(" GET Worked");
+
     let artist = $(".artist").val();
     let track = $(".track").val();
 
-    let url =  "https://api.spotify.com/v1/search?q="+track+"&type=track&artist="+artist;
+    let url =  "https://api.spotify.com/v1/search?q="+track+"&type=track&artist="+artist+"&limit=3";
 
 
     $.ajax({
@@ -31,11 +32,25 @@ $(document).ready(() => {
       dataType: 'json',
       url: url
     }).done((response) => {
-      // console.log(response);
+      console.log(response);
 
 
-      //need to validate
+        // for(let i =0; i < 3; i++){
+        //   // console.log("UI " + artist);
+        //   // console.log(response.tracks.items[i].artists[0].name);
+        //   if(artist === response.tracks.items[i].artists[0].name){ console.log("FOUND");}
+        //   // console.log(response.tracks.items[i].artists);
+        // }
+
+        // response.tracks.items.forEach(function(){
+        //   if(artist === response.tracks.items.artists.name)
+        //   { console.log("FOUND");}
+        // });
+
+
+      //need to validate if no response? fail.
       console.log(response.tracks.items[0].uri);
+      // console.log(response.tracks.items[0].name);
 
       $("#here").append(response);
     }).fail((response)=> {
