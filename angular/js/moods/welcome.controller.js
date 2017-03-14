@@ -9,8 +9,9 @@
 
   function MoodsWelcomeControllerFunction(){
 
-    this.hello = function () {
-      console.log('hey there you made it here')
-    }
+    console.log("we are in the welcome controller");
+  //  this.hello = function () {
+    //  console.log('hey there you made it here')
+  //  }
   }
 }());
